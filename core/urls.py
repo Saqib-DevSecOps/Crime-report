@@ -1,4 +1,3 @@
-
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
@@ -21,7 +20,7 @@ urlpatterns += \
 
 urlpatterns += \
     [
-
+        path('c/', include('src.portal.urls'))
     ]
 if settings.DEBUG:
     urlpatterns += [] + static(settings.MEDIA_URL, documents=settings.MEDIA_ROOT)

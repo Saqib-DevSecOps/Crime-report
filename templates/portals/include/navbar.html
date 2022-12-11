@@ -1,0 +1,64 @@
+{% load static %}
+<div class="app-menu navbar-menu">
+    <!-- LOGO -->
+    <div class="navbar-brand-box">
+        <!-- Dark Logo-->
+        <a class="logo logo-dark mt-4" href="index.html">
+                    <span class="logo-sm">
+                        <img alt="" height="22" src="{% static 'accounts/images/logo-sm.png' %}">
+                    </span>
+            <span class="logo-lg">
+                        <img alt="" height="17" src="{% static 'accounts/images/logo-dark.png' %}">
+                    </span>
+        </a>
+        <!-- Light Logo-->
+        <a class="logo logo-light mt-4" href="index.html">
+                    <span class="logo-sm">
+                        <img alt="" height="22" src="{% static 'accounts/images/logo-sm.png' %}">
+                    </span>
+            <span class="logo-lg">
+                        <img alt="" height="17" src="{% static 'accounts/images/logo-light.png' %}">
+                    </span>
+        </a>
+        <button class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover"
+                type="button">
+            <i class="ri-record-circle-line"></i>
+        </button>
+    </div>
+
+    <div class="h-100" data-simplebar="init" id="scrollbar">
+        <div class="simplebar-wrapper" style="margin: 0px;">
+            <div class="simplebar-height-auto-observer-wrapper">
+                <div class="simplebar-height-auto-observer"></div>
+            </div>
+            <div class="simplebar-mask">
+                <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                    <div aria-label="scrollable content" class="simplebar-content-wrapper" role="region" style="height: 100%; overflow: hidden scroll;"
+                         tabindex="0">
+                        <div class="simplebar-content" style="padding: 0px;">
+                            <div class="container-fluid">
+
+                                <div id="two-column-menu">
+                                </div>
+                                {% include 'portals/include/client.html' %}
+                            </div>
+                            <!-- Sidebar -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="simplebar-placeholder" style="width: auto; height: 867px;"></div>
+        </div>
+        <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+            <div class="simplebar-scrollbar"
+                 style="width: 0px; display: none; transform: translate3d(0px, 0px, 0px);"></div>
+        </div>
+        <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+            <div class="simplebar-scrollbar"
+                 style="height: 25px; transform: translate3d(0px, 0px, 0px); display: block;"></div>
+        </div>
+    </div>
+
+    <div class="sidebar-background"></div>
+</div>
+<div class="vertical-overlay"></div>
