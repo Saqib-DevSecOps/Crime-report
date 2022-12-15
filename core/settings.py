@@ -24,7 +24,6 @@ INSTALLED_APPS = [
 
     # Applications
 
-    "src.portal.apps.PortalConfig",
     "src.website.apps.WebsiteConfig",
     "src.accounts.apps.AccountsConfig",
 

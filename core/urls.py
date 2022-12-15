@@ -20,7 +20,7 @@ urlpatterns += \
 
 urlpatterns += \
     [
-        path('c/', include('src.portal.urls'))
+        path('', include('src.website.urls'))
     ]
 if settings.DEBUG:
     urlpatterns += [] + static(settings.MEDIA_URL, documents=settings.MEDIA_ROOT)
