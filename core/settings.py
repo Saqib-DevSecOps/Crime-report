@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 
     # Applications
 
@@ -35,12 +36,15 @@ INSTALLED_APPS = [
     # Packages
     'django_countries',
     'crispy_forms',
+    "crispy_bootstrap5",
+
     'django_filters',
     'widget_tweaks',
 ]
 # ------------------------------------------------------------------------------
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 # --------------------------------MiddleWares------------------------------------
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -133,7 +137,7 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
-SITE_ID = 1
+SITE_ID = 2
 ACCOUNT_LOGOUT_ON_PASSWORD_CHANGE = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_LOGOUT_REDIRECT_URL = LOGOUT_REDIRECT_URL
